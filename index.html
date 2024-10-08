@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website with Navbar & Slideshow</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+     
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Contact Section -->
+    <div class="contact-container">
+        <div class="contact-info-group">
+            <div class="contact-info">
+                <i class="fas fa-clock"></i>
+                <span>Mon-Fri: 9 AM - 5 PM</span>
+            </div>
+            <div class="contact-info">
+                <i class="fas fa-envelope"></i>
+                <span>smhs@gmail.com</span>
+            </div>
+            <div class="contact-info">
+                <i class="fas fa-phone"></i>
+                <span>123-456-7890</span>
+            </div>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/st_marks_high_school/"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@st.markshighschooluppal9099"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+    
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img src="/image/logo.jpg" alt="Logo" class="logo">
+            <div class="logo-text">
+                <h1>St Marks High School</h1>
+                <p>Hold high the torch</p>
+            </div>
+        </div>
+        <div class="nav-links">
+            <div class="dropdown">
+                <a href="#">About Us</a>
+                <div class="dropdown-content">
+                    <a href="#">Mission</a>
+                    <a href="#">Vision</a>
+                    <a href="#">Our History</a>
+                    <a href="#">Leadership</a>
+                    <a href="#">Careers</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Our School</a>
+                <div class="dropdown-content">
+                    <a href="#">Academic Overview</a>
+                    <a href="#">Faculty</a>
+                    <a href="#">Facilities</a>
+                    <a href="#">Achievements</a>
+                    <a href="#">Events</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Admissions</a>
+                <div class="dropdown-content">
+                    <a href="#">How to Apply</a>
+                    <a href="#">Scholarships</a>
+                    <a href="#">Fees</a>
+                    <a href="#">Open Days</a>
+                    <a href="#">FAQ</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Curriculum</a>
+                <div class="dropdown-content">
+                    <a href="#">Primary School</a>
+                    <a href="#">Middle School</a>
+                    <a href="#">High School</a>
+                    <a href="#">Extracurriculars</a>
+                    <a href="#">Technology in Classrooms</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#">Life & Learning at SMHS</a>
+                <div class="dropdown-content">
+                    <a href="#">Student Life</a>
+                    <a href="#">Sports</a>
+                    <a href="#">Arts & Music</a>
+                    <a href="#">Clubs</a>
+                    <a href="#">Parent Resources</a>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+
+
+    <!-- Slideshow -->
+    <section class="slideshow-container">
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('/image/school1.jpg');">
+                <div class="slide-content">
+                    <p>ABOUT OUR SCHOOL</p>
+                    <h1>WELCOME TO ST MARKS HIGH SCHOOL</h1>
+                    <h1>HYDERABAD</h1>
+                    <a href="#" class="read-more">Why choose SMHS?</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('/image/school2.png');">
+                <div class="slide-content2">
+                    <h1>EMPOWERING 21ST CENTURY LEARNERS</h1>
+                    <h1>THROUGH TECHNOLOGY AND INNOVATION IN A</h1>
+                    <h1>STATE OF ART LEARNING ENVIRONMENT</h1>
+                    <a href="#" class="read-more">ENROLL FROM HOME</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('/image/school3.png');">
+                <div class="slide-content3">
+                    <!-- <h1>Build Your Future</h1> -->
+                    <p>Celebrating Unity, Embracing Diversity – Together We Rise!</p>
+                    <!-- <a href="#" class="read-more">ENROL FROM HOME</a> -->
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('/image/school4.JPG');">
+                <div class="slide-content4">
+                    <!-- <h1>Join Us Today</h1> -->
+                    <p>A Team Committed to Nurturing Future Leaders</p>
+                    <!-- <a href="#" class="read-more">ENROL FROM HOME</a> -->
+                </div>
+            </div>
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </section>
+
+
+    <section class="school-intro">
+        <p class="welcome-text">Welcome to ST MARKS HIGH SCHOOL - HYDERABAD</p>
+        <h1 class="main-heading">INSPIRING ECCELLENCE AT ST.MARKS</h1>
+        <div class="description-separator"></div>
+        <p class="description">
+            St. Marks High School, situated in the vibrant community of Uppal, Hyderabad, is dedicated to fostering a nurturing and inclusive environment for students. Established with a commitment to academic excellence, the school offers a comprehensive curriculum that encourages critical thinking, creativity, and personal growth. Our experienced faculty members are passionate about guiding students on their educational journey, ensuring they are well-prepared for future challenges.         </p>
+        
+    </section>
+
+    <section class="container">
+        <div class="image-container">
+            <div class="slideshow1">
+                <img src="/image/school1.jpg" alt="Excellence Image 1" class="slide active">
+                <img src="/image/school2.png" alt="Excellence Image 2" class="slide">
+                <img src="/image/school3.png" alt="Excellence Image 3" class="slide">
+                <img src="/image/aboutimage.jpg" alt="Excellence Image 4" class="slide">
+            </div>
+        </div>
+        <div class="content-container">
+            <p class="main-paragraph">Culture of Excellence</p>
+            <h1>Acknowledging the incredible efforts of our school community.</h1>
+            <div class="info-box">
+                <div class="info-item">
+                    <h2 class="counter" data-target="1:35">0</h2>
+                    <div class="description-separator2"></div>
+
+                    <p>High Performance Teams</p>
+                </div>
+                <div class="info-item">
+                    <h2 class="counter" data-target="10">0</h2>
+                    <div class="description-separator2"></div>
+
+                    <p>Innovation & Creativity</p>
+                </div>
+                <div class="info-item">
+                    <h2 class="counter" data-target="9">0</h2>
+                    <div class="description-separator2"></div>
+
+                    <p>Customer-Centric Approach</p>
+                </div>
+                <div class="info-item">
+                    <h2 class="counter" data-target="02">0</h2>
+                    <div class="description-separator2"></div>
+
+                    <p>Branches</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-smhs">
+        <h1 class="why-choose">Why Choose SMHS?</h1>
+        <p class="reasons-believe">Reasons to Believe</p>
+        
+        
+        
+        
+    
+
+</body>
+
+
+
+
+</html>
+
+</body>
+</html>
