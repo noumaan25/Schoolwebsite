@@ -84,6 +84,26 @@ function toggleMenu() {
 
 
 
+// Function to handle the scroll event
+function revealOnScroll() {
+    const cards = document.querySelectorAll('.card');
+    const windowHeight = window.innerHeight;
+
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+
+        // Add 'show' class if the card is within the viewport
+        if (cardTop < windowHeight - 100) {
+            card.classList.add('show');
+        }
+    });
+}
+
+// Listen for the scroll event
+window.addEventListener('scroll', revealOnScroll);
+
+
+
 
 
 
