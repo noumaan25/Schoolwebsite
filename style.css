@@ -495,6 +495,116 @@
   animation: fadeSlide 16s infinite 12s;
 }
 
+/* why chose smhs section */
+
+.why-smhs {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 10px 10px;
+  margin-top: 150px;
+}
+
+.why-choose {
+  font-size: 40px;
+  font-family: 'oswald', sans-serif;
+  color: #050095;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.reasons-believe {
+  font-family: 'timesnewroman', sans-serif;
+  font-size: 20px;
+  color: #68d7ff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container9 {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 1200px;
+  padding: 20px;
+  margin-left: 100px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  width: 32%;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transform: translateY(100px); /* Initial position for sliding effect */
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+}
+
+.header {
+  padding: 10px;
+  text-align: left;
+}
+
+.green {
+  background: linear-gradient(250deg, #ffffff, #68d7ff);
+  color: #ffffff;
+}
+
+.green-gradient {
+  background: linear-gradient(250deg, #ffffff, #68d7ff);
+  color: white;
+}
+
+.header h2 {
+  font-family: 'oswald', serif;
+  font-size: 1.5rem;
+}
+
+.content {
+  padding-top: 15px;
+}
+
+.content p {
+  font-family: 'raleway', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #555;
+}
+
+.content p strong {
+  color: #050095;
+  animation: color-change 4s infinite;
+}
+
+@keyframes color-change {
+  0% { color: rgb(255, 69, 0); }    /* Deep orange-red (base of the flame) */
+  25% { color: rgb(255, 140, 0); }   /* Orange */
+  50% { color: rgb(255, 215, 0); }   /* Bright yellow-orange (middle of the flame) */
+  75% { color: rgb(255, 255, 102); } /* Soft yellow (top of the flame) */
+  100% { color: rgb(255, 165, 0); }  /* Orange-gold flicker */
+}
+
+
+/* Hidden until scroll */
+.hidden {
+  opacity: 0;
+  transform: translateY(100px); /* Slide up */
+}
+
+/* Reveal on scroll */
+.show {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card .header::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background-color: #ffffff;
+  margin-top: 10px;
+}
 
 
 /* Responsive Styles */
