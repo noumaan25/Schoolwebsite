@@ -726,7 +726,7 @@
   position: relative;
   width: 100%;
   height: 700px; /* Height for the section */
-  background-image: url('/image/porto.JPG'); /* Replace with your image path */
+  background-image: url('porto.JPG'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   background-attachment: fixed; /* Fix the background in place */
